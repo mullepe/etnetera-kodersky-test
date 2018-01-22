@@ -1,15 +1,16 @@
+/**
 * {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
 }
+**/
 
-
-
+/** Navigation **/
 
 .nav-image {
-	max-width:80%;
+	/**max-width:80%;**/
 }
 
 .flex-container {
@@ -36,6 +37,24 @@
     display: block;
     padding: 0 1em;
     color: black;
+}
+
+
+/** Carousel **/
+
+.img-carousel {
+	max-width: 100%;
+	position: center;
+}
+
+.flex-carousel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex-item-carousel {
+	justify-content: flex-start;
 }
 
 

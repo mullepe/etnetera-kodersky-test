@@ -7,15 +7,13 @@
     <meta charset="UTF-8">
     
     <link rel="stylesheet" type="text/css" href="main.css">
-    
-    <!-- Slick caoursel css -->
+    	
+	<!-- Flickity caoursel end css -->
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-	
-	<!-- Slick caoursel end css -->
+	<link rel="stylesheet" href="flickity/flickity.css" media="screen">
 
   </head>
+
   <body>
 
   		<!-- Navigace -->
@@ -40,17 +38,32 @@
 
 		<!-- carousel -->
 
-		<div class="carousel">
+		<div class="main-carousel">
+  			<div class="carousel-cell">
+  				
+  				<div class="flex-carousel">
 
-		  <div><img src="assets/carousel-img1.png" alt="Etnetera logo"></div>
-		  <div><img src="assets/carousel-img1.png" alt="Etnetera logo"></div>
-		  <div><img src="assets/carousel-img1.png" alt="Etnetera logo"></div>
+  					<img src="assets/carousel-img1.png" alt="Carousel image">
 
+
+  				</div>
+  			</div>
+  			<div class="carousel-cell"><img src="assets/carousel-img1.png" alt="Carousel image"></div>
+  			<div class="carousel-cell"><img src="assets/carousel-img1.png" alt="Carousel image"></div>
 		</div>
 
+
+		<div class="flex-carousel">
+
+			<div class="flex-item-carousel">p</div>
+			<div class="flex-item-carousel">p</div>
+			<div class="flex-item-carousel">p</div>
+
+		</div>	
+
+
 		<!-- carousel end -->
-
-
+	
 		<!-- Bordel -->
 
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris metus. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Quisque tincidunt scelerisque libero. Cras elementum. Et harum quidem rerum facilis est et expedita distinctio. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed ac dolor sit amet purus malesuada congue. Fusce tellus. Aliquam in lorem sit amet leo accumsan lacinia. Aliquam ornare wisi eu metus.</p>
@@ -63,21 +76,22 @@
 
 		<!-- Bordel end -->
 
-		<!-- Carousel js -->
+		<!-- flickity scripts -->
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script src="flickity/flickity.pkgd.min.js"></script>
 
-		 <script type="text/javascript">
-		    $(document).ready(function(){
-		      $('.carousel').slick({
-		        arrows: true,
-		      });
-		    });
-		 </script>
+		<script> $('.main-carousel').flickity({
+ 		 // options
+  		cellAlign: 'left',
+  		contain: true,
+  		wrapAround: true,
+  		pageDots: false
+		});
+		</script>
 
-		 <!-- Carousel js end -->
+		<!-- flickity scripts -->
  
   </body>
 </html>
