@@ -63,6 +63,11 @@
   display: flex;
 }
 
+.single {
+    min-width: 100%; 
+    text-align: center;
+}
+
 
 
 
