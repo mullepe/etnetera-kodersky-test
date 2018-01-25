@@ -13,18 +13,21 @@
  src: url("fonts/ChevinPro-Medium.otf") format("opentype"); 
 }
 @font-face {
- font-family: "OpenSans";  
- src: url("fonts/OpenSans-Regular.ttf") format("truetype"); 
-}
-@font-face {
- font-family: "OpenSans Light";
- src: url("fonts/OpenSans-Light.ttf") format("truetype"); 
+ font-family: "OpenSans";
+ font-weight: bold;
+ src: url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
 @font-face {
  font-family: "OpenSans";
- font-weight: bold;
- src: url("fonts/OpenSans-Bold.ttf") format("ttf"); 
+ src: url("fonts/OpenSans-Light.ttf") format("truetype");
+ font-weight: lighter; 
 }
+@font-face {
+ font-family: "OpenSans";  
+ src: url("fonts/OpenSans-Regular.ttf") format("truetype"); 
+}
+
+
 
 a {
     color: #e84e0e;
@@ -38,7 +41,8 @@ a {
 
 .article h2, h3 {
     padding: 20px 50px 5px 50px;
-    font-family: "OpenSans Light";
+    font-family: "OpenSans";
+    font-weight: lighter;
 }
 
 .article-1 p, img {
