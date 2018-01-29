@@ -27,14 +27,29 @@
  src: url("fonts/OpenSans-Regular.ttf") format("truetype"); 
 }
 
+/** fonts end **/
+
+body {
+    background-color: #f2f2f2;
+    font-family: "OpenSans";
+}
+
 a {
     color: #e84e0e;
     text-decoration: none;
 }
 
 .article {
-    background-color: #f2f2f2;
-    font-family: "OpenSans";
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.article-2 {
+    column-count: 2;
+    column-gap: 50px;
+    padding: 20px 50px 5px 50px;
 }
 
 .article h2, h3 {
@@ -43,57 +58,42 @@ a {
     font-weight: lighter;
 }
 
-.article-1 {
-    max-width: 900px;
-    display: block;
-    margin: 0 auto;
-}
-
-.article-2 {
-    max-width: 900px;
-    display: block;
-    margin: 0 auto;
-}
-
-.article-1 p, img {
-    padding: 20px 50px 5px 50px;
-    font-size: 0.8em;
-}
-
 .article-1 img {
     float: left;
     max-width: 100%;
     margin-bottom: 10px;
+    padding: 20px 50px 5px 50px;
+}
+
+.article-1 p {
+    padding: 20px 50px 5px 50px;
+    font-size: 0.8em;
+    text-align: justify;
 }
 
 .article-2 p {
-    
     font-size: 0.8em;
-    column-count: 2;
-    padding: 20px 50px 20px 50px;  
+    padding-top: 0px;
+    padding-bottom: 25px;
 }
 
-.article-2 {
-    
-    column-gap: 50px;  
-}
 
 /** footer **/
 
 footer {
+    background-color: white;
     text-align: center;
     padding: 20px 0 20px 0;
     font-size: 0.7em;
+    line-height: 1.8;
 }
 
-.footer-copyright {
+.orange-text {
     color: #e84e0e;
-    margin: 20px 0 5px 0;
 }
 
-footer p {
-    margin-bottom: 15px;
-    font-family: OpenSans;
+.tm-10 {
+    margin-top: 10px;
 }
 
 /** test @media **/
@@ -109,7 +109,6 @@ footer p {
 
     .article-2 p {
         column-count: 1;
-        padding: 20px 50px 20px 50px;      
     }
 
 @media only screen and (max-width: 900px) {
@@ -122,6 +121,5 @@ footer p {
 
     .article-2 {
         column-count: 1;
-        padding: 20px 50px 20px 50px;      
         }
 }
