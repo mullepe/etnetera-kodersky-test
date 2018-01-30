@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/** Navigation **/
+
+.nav-image {
+	/**max-width:80%;**/
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.nav {
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0 1em;
+    color: black;
+}
+
+
+/** Carousel **/
+
+.img-carousel {
+	max-width: 100%;
+	position: center;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.single {
+    min-width: 100%; 
+    text-align: center;
+}
+
+
+
+
+/** test @media **/
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
