@@ -30,13 +30,16 @@
 /** fonts end **/
 
 body {
-    background-color: #f2f2f2;
     font-family: "OpenSans";
 }
 
 a {
     color: #e84e0e;
     text-decoration: none;
+}
+
+.article-background {
+    background-color: #f2f2f2;
 }
 
 .article {
@@ -77,13 +80,36 @@ a {
     padding-bottom: 25px;
 }
 
+/** news **/
+
+.news {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 15px 50px 15px 50px;
+    overflow: scroll;
+}
+
+.news p, a {
+    display: inline;
+    white-space: nowrap;
+
+}
+
+.news-date {
+    font-size: 0.7em;
+    color: #7d7d7d;
+}
+
 
 /** footer **/
 
 footer {
     background-color: white;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
     font-size: 0.7em;
     line-height: 1.8;
 }
