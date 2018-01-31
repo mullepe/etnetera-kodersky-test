@@ -8,6 +8,10 @@
     
     <link rel="stylesheet" type="text/css" href="main.css">
 
+    <!-- Flickity carousel -->
+    
+    <link rel="stylesheet" href="flickity/flickity.css" media="screen">
+
     <!-- Chartist -->
 
     
@@ -18,6 +22,15 @@
 
   <body>
 
+    <!-- Carousel -->
+
+    <div class="main-carousel">
+        
+        <div class="carousel-cell single"><img src="assets/carousel-img1.png" alt="Carousel image"></div>
+
+        <div class="carousel-cell"><img src="assets/carousel-img1.png" alt="Carousel image"></div>
+    
+    </div>
 
   	<!-- news -->
 
@@ -37,7 +50,7 @@
   	<div class="article-1">
 
   	<h2>Fronty u kávovaru</h2>
-  	<img src="assets/coffee-cup.png" alt="Coffee cup">
+  	<img src="assets/coffee-cup.png" alt="Coffee cup with coffee beans">
   	<p>Arabica latte shop macchiato doppio coffee steamed. Brewed, macchiato grounds medium, eu breve grinder frappuccino americano. Pumpkin spice, caffeine chicory dark medium arabica macchiato instant rich. Et, single shot aged half and half lungo whipped, cinnamon cappuccino whipped id mazagran.</p>
   	<p><b>Con panna</b> sugar macchiato so macchiato in skinny variety mug that. A plunger pot acerbic, brewed medium java aromatic coffee. At mocha wings acerbic beans medium saucer. Cup extra sit half and half robust java crema turkish.</p>
   	<p>Medium aroma cream qui medium coffee arabica, caffeine et <a href="#" target="_blank">caramelization cup</a> plunger pot. Eu, plunger pot organic dark, cinnamon, redeye wings fair trade whipped lungo crema. Carajillo caramelization americano, plunger pot, filter coffee foam siphon roast and java.</p>
@@ -68,6 +81,22 @@
   		<p class="tm-10">Jsme hrdým členem <a href="www.etneteragroup.cz" target="_blank">Etnetera Group</a></p>
   	</footer>
 
+    <!-- flickity scripts -->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="flickity/flickity.pkgd.min.js"></script>
+
+    <script> $('.main-carousel').flickity({
+     // options
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      pageDots: false
+    });
+    </script>
+
+    <!-- flickity scripts -->
  
   </body>
 </html>
