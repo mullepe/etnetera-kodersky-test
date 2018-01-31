@@ -128,6 +128,35 @@ a {
     width: 100%;
 }
 
+.carousel-text-container {
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-text {
+    position: absolute;
+    padding: 40px 50px 5px 50px;
+    max-width: 1300px;
+}
+
+.carousel-text h2 {
+    font-weight: lighter; 
+    padding-bottom: 10px;
+    max-width: 650px;
+}
+
+.carousel-text p {
+    font-weight: lighter;
+    padding-bottom: 10px;
+    max-width: 650px;
+}
+
+.carousel-text button {
+    float: right;
+    
+}
+
 
 /** footer **/
 
@@ -147,7 +176,7 @@ footer {
     margin-top: 10px;
 }
 
-/** test @media **/
+/** @media **/
 
 @media only screen and (max-width: 1170px) {
 
