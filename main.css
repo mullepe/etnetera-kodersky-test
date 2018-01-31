@@ -116,6 +116,19 @@ a {
     vertical-align: middle;
 }
 
+/** carousel **/
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 400px; /* height of carousel */
+  margin-right: 10px;
+}
+
+.main-carousel img {
+    width: 100%;
+}
+
+
 /** footer **/
 
 footer {
@@ -135,6 +148,15 @@ footer {
 }
 
 /** test @media **/
+
+@media only screen and (max-width: 1170px) {
+
+    .main-carousel img {
+        min-height: 400px;
+        object-fit: none;        
+    }
+
+}
 
 @media only screen and (max-width: 750px) {
 
