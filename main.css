@@ -136,8 +136,11 @@ a {
 
 .carousel-text {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+
     padding: 40px 50px 5px 50px;
-    max-width: 1300px;
 }
 
 .carousel-text h2 {
@@ -153,8 +156,8 @@ a {
 }
 
 .carousel-text button {
-    float: right;
-    
+    max-width: 100px;
+    margin-left: auto;
 }
 
 
