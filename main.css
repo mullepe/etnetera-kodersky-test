@@ -144,36 +144,42 @@ a {
 }
 
 .carousel-text-left {
-    flex-grow: 1;
     max-width: 600px;
     align-self: flex-start;
 }
 
+/* prostřední prázdný scvrkávající se sloupec*/
+.carousel-text-middle {
+    flex-basis: 50px;
+    flex-shrink: 3;
+}
+
 .carousel-text-right {
     align-self: flex-end;
+    flex: 0 0 200px;
 }
 
 .carousel-text h2 {
     font-weight: lighter;
-    padding-bottom: 10px;
+    text-shadow: 1px 1px rgba(128,128,128,0.5);
+    padding-bottom: 25px;
     max-width: 650px;
 }
 
 .carousel-text p {
     font-weight: lighter;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     max-width: 650px;
 }
 
-.carousel-text button {
+.carousel-text a {
     font-weight: lighter;
-    margin-bottom: 40px;
-    
     color: #e84e0e;
     background-color: white;
-    border: solid;
-    font-size: 1em;
-    padding: 15px 32px;
+    border: 1px solid;
+    border-radius: 9999em;
+    font-size: 0.9em;
+    padding: 8px 50px;
 }
 
 /** footer **/
@@ -181,7 +187,7 @@ a {
 footer {
     background-color: white;
     text-align: center;
-    padding: 10px 0 10px 0;
+    padding: 30px 0 30px 0;
     font-size: 0.7em;
     line-height: 1.8;
 }
@@ -206,6 +212,26 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
+
+    .carousel-cell {
+  width: 100%; /* full width */
+  height: 350px; /* height of carousel */
+  margin-right: 10px;
+}
+
+    .carousel-text {
+        display: inline-block;
+        padding: 30px 50px 5px 50px;
+    }
+
+    .carousel-text-left {
+        text-align: center;
+    }
+
+    .carousel-text-right {
+        text-align: center;
+        padding-top: 35px;
+    }
 
     .news {
         max-width: 600px;
