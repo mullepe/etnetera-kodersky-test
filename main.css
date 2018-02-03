@@ -93,11 +93,6 @@ p {
     display: none;
 }
 
-.nav-collapse {
-    
-}
-
-
 /** articles **/
 
 .article-background {
@@ -244,14 +239,31 @@ p {
     padding: 8px 50px;
 }
 
-/** chartist **/
+/** charts, chartist **/
 
-.chart {
+.chart-wrapper {
     display: block;
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 20px;
     font-family: "Chevin";
+}
+
+.chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-icons {
+    max-width: 25px;
+    display: block;
+    margin-top: 20px;
+}
+
+.chart-icons img {
+    max-width: 100%;
+    margin-bottom: 10px
 }
 
 /** otáčí x label, posouvá lehce doprava **/
@@ -279,6 +291,11 @@ p {
 .ct-series-a .ct-bar {
   /* Colour of your bars */
   stroke: black;
+}
+
+/* Negativní margin, aby se ikony držely blíž ke grafu */
+.ct-chart.ct-double-octave {
+    margin-left: -40px;
 }
 
 /** footer **/
