@@ -244,14 +244,19 @@ p {
     padding: 8px 50px;
 }
 
-/** chart **/
+/** chartist **/
 
 .chart {
-    max-width: 400px;
-    max-height: 200px;
     display: block;
+    max-width: 400px;
     margin: 0 auto;
 }
+
+.ct-label.ct-label.ct-horizontal {
+  transform: rotate(-90deg);
+}
+  
+
 
 /** footer **/
 
