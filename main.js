@@ -8,14 +8,15 @@
 
 	axisX: {
    		showGrid: false,
+   		offset: 60,
 	},
 
 	axisY: {
    		showLabel: false,
    		showGrid: false,
+   		
 	},
 
-	seriesBarDistance: 20,
   	
 
   });

@@ -250,12 +250,25 @@ p {
     display: block;
     max-width: 400px;
     margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: "Chevin";
 }
 
+/** otáčí x label, posouvá lehce doprava **/
 .ct-label.ct-label.ct-horizontal {
   transform: rotate(-90deg);
+  margin-left: 5px;
 }
-  
+
+/** posouvá X label do zákrytu s bars**/
+.ct-horizontal.ct-label {
+  padding: 10px;
+}
+ 
+/** zakulacené bars **/
+.ct-chart .ct-bar {
+  stroke-linecap: round;
+} 
 
 
 /** footer **/
