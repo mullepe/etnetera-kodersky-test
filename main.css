@@ -288,9 +288,14 @@ p {
     stroke-width: 11.2px;
 }
 
-.ct-series-a .ct-bar {
+#chart1 .ct-series-a .ct-bar  {
   /* Colour of your bars */
-  stroke: black;
+  stroke: #e84e0e;
+}
+
+#chart2 .ct-series-a .ct-bar  {
+  /* Colour of your bars */
+  stroke: #e84e0e;
 }
 
 /* Negativní margin, aby se ikony držely blíž ke grafu */
