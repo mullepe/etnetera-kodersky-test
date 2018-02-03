@@ -248,7 +248,7 @@ p {
 
 .chart {
     display: block;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     margin-bottom: 20px;
     font-family: "Chevin";
@@ -257,7 +257,8 @@ p {
 /** otáčí x label, posouvá lehce doprava **/
 .ct-label.ct-label.ct-horizontal {
   transform: rotate(-90deg);
-  margin-left: 5px;
+  margin-left: 8px;
+  color: black;
 }
 
 /** posouvá X label do zákrytu s bars**/
@@ -265,11 +266,20 @@ p {
   padding: 10px;
 }
  
-/** zakulacené bars **/
-.ct-chart .ct-bar {
+/** zakulacené bars v chart1 **/
+#chart1 {
   stroke-linecap: round;
 } 
 
+/** šířka sloupců **/
+.chart .ct-bar {
+    stroke-width: 11.2px;
+}
+
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: black;
+}
 
 /** footer **/
 
