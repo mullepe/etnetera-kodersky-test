@@ -9,18 +9,18 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 
     <!-- Flickity carousel -->
-    
     <link rel="stylesheet" href="flickity/flickity.css" media="screen">
+    <!-- Flickity carousel end -->
 
     <!-- responsive nav -->
 	<link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
 	<script src="responsive-nav.js-master/responsive-nav.js"></script>
-
+	<!-- responsive nav end -->
 
     <!-- Chartist -->
 
-    
-
+	
+        
     <!-- chartist end -->
 
   </head>
@@ -125,7 +125,12 @@
 
   	</div>	
   
-  	<!-- graph -->	
+  	<!-- chart -->	
+
+  	<div class="chart">
+  		<canvas id="barChart" width="400" height="200" ></canvas>
+  	</div>
+
 
 
   	<!-- article 2 -->	
@@ -152,7 +157,7 @@
 	<script>
 	  var nav = responsiveNav(".nav-collapse", {label:"MENU"});
 	</script>
-
+	<!-- responsive nav end -->
 
     <!-- flickity scripts -->
 
@@ -169,8 +174,10 @@
     });
     </script>
 
-    <!-- flickity scripts -->
+    <!-- flickity scripts end -->
 
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="main.js"></script>
+    
   </body>
 </html>

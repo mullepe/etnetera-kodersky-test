@@ -244,6 +244,15 @@ p {
     padding: 8px 50px;
 }
 
+/** chart **/
+
+.chart {
+    max-width: 400px;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
 /** footer **/
 
 footer {
