@@ -240,7 +240,7 @@ p {
     border: 1px solid;
     border-radius: 9999em;
     font-size: 0.9em;
-    padding: 8px 50px;
+    padding: 8px 40px;
 }
 
 /** charts, chartist **/
@@ -443,6 +443,7 @@ footer {
 
     .carousel-text h2 {
     font-size: 1.2em;
+    padding-bottom: 15px;
     }
 
     .carousel-text p {
