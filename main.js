@@ -47,6 +47,16 @@
   });
 
 
+  var reference = document.querySelector('.my-button');
+var popper = document.querySelector('.my-popper');
+var anotherPopper = new Popper(
+    reference,
+    popper,
+    {
+        // popper options here
+    }
+);
+
 
 /** pokus
 
