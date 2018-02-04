@@ -162,9 +162,6 @@ p {
 }
 
 .news-message {
-    white-space: nowrap;
-    overflow: hidden;
-    overflow: scroll;
     max-width: 500px;
     display: inline-block;  
     vertical-align: middle;
@@ -350,7 +347,6 @@ footer {
         margin: 15px; 
     }
 
-
     .carousel-cell {
       width: 100%; /* full width */
       height: 350px; /* height of carousel */
@@ -390,9 +386,6 @@ footer {
     }
 
     .news-message {
-        white-space: nowrap;
-        overflow: hidden;
-        overflow: scroll;
         max-width: 600px;
         display: block;  
         margin: auto;
