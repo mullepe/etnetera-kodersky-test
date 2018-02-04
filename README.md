@@ -1,1 +1,1 @@
-# etnetera-test-html
+# Etnetera kodérský test
