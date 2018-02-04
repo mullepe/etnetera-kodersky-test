@@ -441,4 +441,25 @@ footer {
         stroke-width: 7px;
     }
 
+    .carousel-text h2 {
+    font-size: 1.2em;
+    }
+
+    .carousel-text p {
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    }
+
+    .carousel-text a {
+        padding: 7px 40px;
+    }
+
+    }
+
+    @media only screen and (max-width: 400px) {
+
+    .chart .ct-bar {
+        stroke-width: 2px;
+    }
+
     }
